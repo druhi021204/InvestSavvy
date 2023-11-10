@@ -1,4 +1,4 @@
-#NOTES: JS
+# NOTES: JS
 
 ## Putting semicolon is optional
 
