@@ -46,3 +46,5 @@ To convert to number, Number(value assigned to variable.)<br>
 (similar to dict in python).
 
 16. Local and global variable same as c++.
+
+17. In arrays, multiple data types can be there at a time.

@@ -148,3 +148,39 @@ info1.greet();
 info1.greet1();
 info1.compare(info2);
 
+//Arrays
+
+let values = [];
+let val=[5,6,7, function(){console.log("Hello World!!");}];
+val.push(8);       //OR val[3]=8;
+console.log(val, val.length);
+console.log(val[3]());
+console.log(val.pop());
+console.log(val, val.length);
+console.log(val.shift());  //it will throw first element out and shift other data ahead by 1 place.
+console.log(val, val.length);
+console.log(val.unshift(2));   //addind element from start.
+console.log(val, val.length);
+console.log(val.splice(2));   //removes all the after index (2-1)
+console.log(val, val.length);
+console.log(val.splice(0,1));  //remove only 1 element i.e at index 0
+console.log(val, val.length);
+console.log(val.splice(0,1,5));  //removes 1 element from 0th index i.e 0th index element is removed and adds element 5 at that index 
+console.log(val, val.length);
+
+
+let nums = [];
+
+nums[0]=5;
+nums[4]=10;
+
+for(let n of nums)
+{
+    console.log(n);     //prints values that are in between index 0 and 4
+}
+
+for(let n in nums)
+{
+    //console.log(nums);   //prints the index of the nums that contain the values
+    console.log(nums[n]);  //prints vlue at that index.
+}
