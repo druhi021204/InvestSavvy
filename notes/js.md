@@ -48,3 +48,5 @@ To convert to number, Number(value assigned to variable.)<br>
 16. Local and global variable same as c++.
 
 17. In arrays, multiple data types can be there at a time.
+
+18. Refer the test.js

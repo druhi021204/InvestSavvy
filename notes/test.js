@@ -26,7 +26,7 @@ let c = 4**3 //64
 console.log(b,c);
 
 let x=5
-let y =5
+let y =6
 let data = x>=5
 let res = x+y;
 
@@ -184,3 +184,75 @@ for(let n in nums)
     //console.log(nums);   //prints the index of the nums that contain the values
     console.log(nums[n]);  //prints vlue at that index.
 }
+
+let nums1=[5,6,7,8];
+let [p,q,r,s]=nums1;
+console.log(nums1);
+console.log(p);      //output is 5
+let[v,n,,o]=nums1;
+console.log(o); //output is 8
+
+[x,y]=[y,x]  //swapping....originally x is 5 and y is 6, now x will take 6 and y will take 5.
+console.log(x,y);
+
+//to make an array of strings
+
+let words = "Ny name is Siddhi Parekh".split(' ');  //split by space
+//Now words is an array.
+//let [a,b,,...d]=words;
+//3 dots used to print elements further, till the last 
+
+console.log(words);
+
+//filter,map method in arrays
+
+let nums2=[4,78,51,25,100];
+
+nums2.filter(n => n%2==0)
+     .map(n=>n*2)         //map doubles the value
+     .forEach(n => {       //printing the value
+        console.log(n);
+    });
+
+let resul = nums2.filter(m=>n%2==0)
+       .map(n=>n*2)
+       .reduce((a,b) => a+b);
+console.log(resul);
+
+//sets
+let nums3 =  new Set();
+
+nums3.add(1);
+nums3.add(7);
+nums3.add(10);
+nums3.add("Siddhi");
+
+console.log(nums3);
+console.log(nums3.has("P"));  //false
+
+//maps
+
+let map = new Map();
+
+//map.set("Key", "Value");
+map.set("Siddhi", "Compilers");
+map.set("Druhi", "ML");
+map.set("Richa", "Web Dev");
+map.set("Siddhi", "Web Dev");
+
+console.log(map);
+console.log(map.keys());
+console.log(map.values());
+console.log(map.has("Gauri"));  //checks the key, so false
+console.log(map.get("Siddhi"));  //output is value
+
+for(let [k,v] of map)
+{
+    console.log(k, " : ", v);
+}
+
+map.forEach((v,k) => {
+    console.log(k, " : ", v);
+});
+
+    
