@@ -1,15 +1,15 @@
-document.querySelectorAll('.btn').forEach((item) => 
+/* document.querySelectorAll('.btn').forEach((item) => 
 {
     item.addEventListener('click', ()=>{
         alert('Error 404')
     })
-})
+}) */
 
 //console.log('hello!!');
 //document.write('Hello!!');
 document.body.style.backgroundColor='orange';
 document.body.style.color='white';
-document.getElementById('btn').style.backgroundColor='aqua';
+//document.getElementById('btn').style.backgroundColor='aqua';
 
 //const element = document.getElementById('element');
 
@@ -34,7 +34,7 @@ document.getElementById('btn').style.backgroundColor='aqua';
  tag1[0].style.color='black';  //all bullet+text
 
  const tag2 = document.getElementsByTagName('li');
- tag2[0].style.color='black';   //only single element(nullet+text).
+ tag2[0].style.color='black';   //only single element(bullet+text).
 
 // //in class and tag, nodelist is formed, so with the properties of arrays, we can make the changes. 
 
@@ -120,3 +120,153 @@ else
 }
 
 const classValue = s3.classList;
+
+const res11=document.querySelector('#result1');
+//create empty element
+const bodyDiv = document.createElement('div');
+//create text node
+const text=document.createTextNode("a simple div created");
+bodyDiv.appendChild(text);
+document.body.appendChild(bodyDiv);
+
+
+//const head=document.getElementsByTagName('h2');
+
+
+const small = document.createElement('h6');
+const smallText = document.createTextNode("Adding heading 6");
+small.classList.add('red');
+small.appendChild(smallText);
+document.body.replaceChild(small,bodyDiv);
+//console.log(result1.children);
+
+const res2 = document.querySelector('#result1');
+//console.log(res2);
+const haeding=document.querySelector('h3');
+//console.log(haeding);
+res2.removeChild(haeding);
+console.log(haeding);
+
+const list1 = document.getElementById('result');
+const list2 = document.getElementById('result1');
+const item1 = document.querySelector('.study');
+
+//console.log(list2.textContent);
+//console.log(list1.innerHTML);
+
+const name="coding addict";
+const ul = document.createElement('ul');
+ul.innerHTML=`<li class ="red">Learning JS with ${name} </li>`;
+document.body.appendChild(ul);
+ 
+//ul.textContent="siddhi"; //simply adds the text
+
+//CSS
+
+const random = document.querySelector('.random');
+random.classList.add('design');
+
+//hover 
+const heade = document.querySelector('h2');
+const btnn=document.querySelector('.btn');
+
+
+/* btnn.addEventListener('click',function()
+{
+   heade.classList.add('red');
+}) */
+
+//click-fires after full action occurs
+//mousedown- button is pressed
+//mouseup - button is released
+//mouseenter-moved onto an element
+//mouseleave - moved out of an element
+
+/* heade.addEventListener('mouseenter', function()
+{
+    heade.classList.add('design');
+})
+ */
+
+/* heade.addEventListener('mouseleave', function()
+{
+    heade.classList.remove('design');
+})
+ */
+ const namee = document.getElementById('name');
+/*namee.addEventListener('keypress',function()               //only for keys with character values, function task is peformed.
+{
+    console.log("you pressed a key");
+} ); */
+
+/* namee.addEventListener('keydown',function()        //whichever key on the keyboard is pressed, it will peform task of the function
+{
+    console.log("you pressed a key");
+} ); */
+
+
+/* namee.addEventListener('keyup',function()               //whatever is typed in the input, is displayed on console
+{
+    console.log(namee.value);
+} );
+ */
+
+heade.addEventListener('click', function(event)
+{
+   event.currentTarget.classList.add('design');
+})
+
+//preventDefault() - prevents default behaviour
+//
+
+//currentTarget - always refers to the element to which the event handler has been attached to
+//target - identifies the element on which the event occured
+
+const btns = document.querySelectorAll('.btn');
+btns.forEach(function(btn)
+{
+   btn.addEventListener('mouseenter', function(e)
+   {
+    //e.currentTarget.style.color='yellow';
+    //e.currentTarget.classList.add('design');
+    e.target.style.color='blue';
+   })
+
+   btn.addEventListener('mouseleave', function(e)
+   {
+    e.currentTarget.classList.remove('design');
+   })
+})
+
+/* const container = document.querySelector('.container');
+const listl=document.querySelector('.list-items');
+
+function showBubbling(e)
+{
+    console.log('current target', e.currentTarget);
+    console.log('target', e.target);
+    if(e.target.classList.contains('link'))
+    {
+        console.log("it is a link");
+    }
+}
+
+listl.addEventListener('click', showBubbling);
+//container.addEventListener('click', showBubbling); */
+
+const form = document.getElementById('form');
+const name1=document.getElementById('name');
+const password = document.getElementById('password');
+
+form.addEventListener('submit', function(e)
+{
+    //e.preventDefault();                           //so that on doing refresh, console is not cleared.
+    console.log('form submitted');     
+    console.log(name1.value);
+    console.log(password.value);  
+})
+
+/* localStorage.setItem('name', 'siddhi');
+const name2 = document.localStorage.getItem('name');
+console.log(name2);
+ */
