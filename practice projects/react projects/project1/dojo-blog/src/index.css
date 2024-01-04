@@ -1,0 +1,297 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Quicksand";
+}
+
+.navbar
+{
+    display: flex;
+    padding-top: 20px; 
+    max-width: 1000px;
+    
+    border-bottom: 1px solid  #c2fbf7;
+    margin: auto;
+}
+
+.links 
+{
+   margin: auto;
+} 
+
+.navbar h1 
+{
+    margin: auto;
+    color: deeppink;
+}
+
+.links a 
+{
+    text-decoration: none;
+    margin-left: 16px;
+    padding: 6px;
+    color: rgb(32, 65, 250);
+}
+
+.navbar a:hover {
+    color: #f1356d;
+  }
+
+  /* .link2
+  {
+    background-color: black;
+    border-radius: 8px;
+  }
+ */
+
+ .btn 
+ {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    background-color: aqua;
+ }
+
+ .btn:hover{
+    background-color: #f1356d;
+ }
+
+ .home .para
+ {
+  text-align: centre;
+  display: flex;
+  color: rgb(41, 15, 210);
+  font-size:xx-large ;
+  /* padding: 50px; */
+  margin: auto;
+ }
+
+ .home p{
+  margin-left: 16px;
+  padding-top: 16px;
+  padding-left: 16px;
+ }
+
+ .home a{
+  margin-left: 16px;
+  padding-top: 16px;
+  padding-left: 16px;
+  color:#f1356d;
+ }
+
+ .content1 h1 
+ {
+  text-align: center;
+  border-radius: 7px;
+  background-color: aqua;
+  width: 145px;
+  /* height: 50px; */
+  margin-top: 16px;
+  margin-left: 325px;
+  padding-bottom: 00px;
+ }
+
+ .content1 h1:hover
+ {
+  background-color: cadetblue;
+  color: antiquewhite;
+ }
+
+ .para1 {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 16px;
+    background-color: blueviolet;
+    width: 500px;
+    /* margin-left: 600px; */
+    padding-bottom: 10px;
+    border-radius: 18px;
+    
+ } 
+
+  .para1 h2{
+    color:rgb(104, 229, 245);
+    /* padding: 10px; */
+    margin-bottom: 8px;
+ }
+
+ .para1 p{
+    padding-top: 5px;
+    color: rgb(247, 244, 246);
+    padding-right: 16px;
+    padding-left: 0.5px;
+    width: auto;
+ }
+
+ .blog-preview:hover
+ {
+    /* box-shadow: 1px 3px 5px #0b0a0a; */
+    box-shadow: 3px 5px 10px #f6e9e9;
+    /* width: 500px; */
+ }
+
+ .blog-preview 
+ {
+    /* padding: 10px 16px; */
+    margin: 20px 0; 
+    /* border-bottom: 1px solid #e83636; */
+ }
+
+ .blog-preview a{
+   text-decoration: none;
+ }
+
+ /* .blog-preview h2 
+ {
+    color: #f1356d;
+    margin-bottom: 8px;
+ }  */
+
+ .para1 h1
+ {
+   color: #f1356d;
+   background-color: aliceblue;
+   text-align: center;
+   margin: auto;
+ }
+
+ .Blog-details article p:nth-last-of-type(1)
+ {
+   background-color:lightpink;
+   width: fit-content;
+   padding-top: 10px;
+   margin-left: 28%;
+   margin-right: 500px;
+   padding-left: 15px;
+   padding-right: 8px;
+ }
+
+ .Blog-details p:nth-last-of-type(2)
+ {
+   padding-bottom: 10px;
+   text-align: center;
+ }
+
+
+ .Blog-details h2 
+ {
+   padding-top: 16px;
+   text-align: center;
+ }
+
+ .Blog-details button 
+ {
+   margin-left: 48%;
+   margin-top: 25px;
+   color: deeppink;
+   background-color: white;
+   font-weight: bold;
+   height: 35px;
+   width: 100px;
+   font-size: 15px;
+   border-radius: 7px;
+ }
+
+ .Blog-details button:hover 
+ {
+   box-shadow: 3px 5px 10px #fb1b7c;
+   cursor: pointer;
+ }
+
+ .create h3
+ {
+   color: deeppink;
+   margin-left: 45%;
+   font-size: 40px;
+   padding-top: 100px;
+ }
+
+ .create label 
+ {
+   color: rgb(9, 9, 9);
+   text-align: center;
+   margin-left: 35%;
+   margin-top: auto;
+   padding-top: 30px;
+   display: flex;
+ }
+
+ .create input, .create textarea, .create select
+ {
+   /* width: 100%;
+   margin-left: 45%;
+   margin-right: 80%; */
+
+   width: 600px;
+   margin-left: 35%;
+   border-radius: 7px;
+   box-shadow: 10px, 3px, 5px deeppink;
+   border: 1px solid #4e4b4b;
+   display: block;
+   
+ }
+
+ .create input 
+ {
+   margin-top: 10px;
+   height: 25px;
+   font-style: normal;
+ }
+
+ .create textarea
+ {
+   margin-top: 10px;
+   height: 100px;
+ }
+
+ .create select
+ {
+   margin-top: 10px;
+   height: 25px;
+ }
+
+ .create button
+ {
+   background-color: deeppink;
+   font-size: 17px;
+   width: 100px;
+   height: 35px;
+   border-radius: 7px;
+   border: deeppink;
+   margin-left: 49%;
+   margin-top: 3%;
+   color: #ffffff;
+   font-weight: bold;
+   cursor:pointer;
+ }
+
+ .create p
+ {
+   text-align: centre;
+   margin-left: 45%;
+   padding-top: 16px;
+ }
+
+ .create button:hover{
+   background-color: #000000;
+ }
+
+ .not-found 
+ {
+   margin-left: 30%;
+   text-align: left;
+   padding-top: 50px;
+   text-decoration: none;
+ }
+
+ .not-found p{
+   padding-top: 15px;
+   padding-bottom: 15px;
+ }
+
+ .not-found a 
+ {
+   text-decoration: none;
+ }
