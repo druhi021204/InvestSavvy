@@ -131,10 +131,11 @@ body
 
 .login 
 {
-  background-color: #FFFDFA;
-  margin-left: 650px;
+  background-color: #FFFFF0;
+  margin-left: 650px; 
   width: 500px;
   height: 470px;
+  /* width:auto; */
   margin-top: 150px;
   box-shadow: 1px, 3px, 5px rgb(30, 47, 240) ;
 }
