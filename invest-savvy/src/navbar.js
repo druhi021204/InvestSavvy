@@ -1,10 +1,11 @@
-
+import logo from './logo.png'
 
 const Navbar = () => {
     return ( 
         <nav className="navbar">
            {/* <div className="logo"> */}
-            <h1>InvestSavvy</h1>
+           <img src={logo} width={70} height={50}/>
+            {/* <h1>InvestSavvy</h1> */}
            {/* </div> */}
 
         <div className="links">

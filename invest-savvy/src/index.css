@@ -16,23 +16,27 @@ body
 {
     display: flex;
     /* padding-left: 50px; */
-    padding-top: 25px;
-    padding-left: 30px;
+    padding-top: 30px;
+    padding-left: 60px;
     /* margin-left: 20px; */
 }
 
+.navbar img
+{
+  padding-left: 25px;
+}
 
 .links
 {   margin-top: 7px;
     /* margin-left: auto; */
     margin-right: 20%;
-    padding-left: 37%;
+    padding-left: 49%;
 }
 
 .navbar h1 
 {
     color: #FFFFF0;
-    padding-left: 190px;
+    padding-left: 90px;
 }
 
 .links a 
