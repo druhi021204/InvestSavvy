@@ -1,6 +1,6 @@
-//import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import ContentHome from "./content_home";
 import Navbar from "./navbar";
+import Signup from "./signup";
 import Login from "./login";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -39,6 +39,17 @@ function App() {
             </Route>
           
          
+            <Route path = "/signup">
+              <div className="signuppage">
+                 <Navbar/>
+              </div>
+
+              <div className="signuppg">
+                 <Signup/>
+              </div>
+              
+            </Route>
+
             <Route path = "/login">
               <div className="loginpage">
                  <Navbar/>

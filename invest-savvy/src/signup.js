@@ -1,10 +1,11 @@
 import logo from './logo.png'
 import { useState } from "react";
 
-const Login = () => {
+const Signup = () => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [name, setName]=useState("");
 
     function validateForm() {
 
@@ -17,11 +18,16 @@ const Login = () => {
       }
 
     return ( 
-        <div className="login">
+        <div className="signup">
             <img src={logo} width={70} height={50}/>
             <h2>InvestSavvy</h2>
             {/* <span role="img" aria-label="rocket">🚀</span> */}
             <form onSubmit = {handleSubmit}>
+                <label>Username:</label>
+                <input type="text" required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                />
                 <label>Email: </label>
                 <input type="email" required
                 value={email}
@@ -37,10 +43,10 @@ const Login = () => {
 
                 <button disabled={!validateForm()}>Submit</button>
                 <pre></pre>
-                <a href = "/signup">Don't have an account?</a>
+                <a href = "/login">Already have an account?</a>
             </form>
         </div>
      );
 }
  
-export default Login;
+export default Signup;

@@ -29,6 +29,23 @@ body
  
 }
 
+.signuppage
+{
+  /* background-image: url("bckg.png") ; */
+ /* background-color:rgb(30, 47, 240); */
+ background-color:black;
+ height: 100px;
+ 
+}
+
+.signupg
+{
+  /* background-image: url("bckg.png") ; */
+ /* background-color:rgb(30, 47, 240); */
+ background-color:black;
+ height: 100px;
+ 
+}
 
 .navbar
 {
@@ -157,7 +174,7 @@ body
 {
   margin-left: 650px; 
   width: 500px;
-  height: 470px;
+  height: 530px;
   /* width:auto; */
   background-color:cornsilk;
   margin-top: 150px;
@@ -167,7 +184,7 @@ body
 .login h2
  {
    color: black;
-   margin-left: 15%;
+   margin-left: 24%;
    font-size: 40px;
    padding-top: 20px;
    /* padding-right: 15px; */
@@ -214,11 +231,123 @@ body
    color: #ffffff;
    font-weight: bold;
    cursor:pointer;
-   margin-bottom: 8px;
+   margin-bottom: 40px;
  }
 
  .login button:hover{
   background-color: cornsilk;
+  color: black; 
+}
+
+.login img 
+{
+  padding-top: 30px;
+  padding-left: 42%;
+}
+
+.login  a
+{
+  padding-left: 32%;
+  padding-top: 16px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.login a:hover 
+{
   color: black;
 }
+
+
+
+.signup 
+{
+  margin-left: 650px; 
+  width: 500px;
+  height: 530px;
+  /* width:auto; */
+  background-color:cornsilk;
+  margin-top: 150px;
+  box-shadow: 1px, 3px, 5px rgb(30, 47, 240) ;
+}
+
+.signup h2
+ {
+   color: black;
+   margin-left: 24%;
+   font-size: 40px;
+   padding-top: 20px;
+   /* padding-right: 15px; */
+ }
+
+ .signup label 
+ {
+   color: black;
+   text-align: center;
+   margin-left: 15%;
+   margin-top: auto;
+   padding-top: 30px;
+   display: flex;
+   font-weight: bold;
+ }
+
+ .signup input
+ {
+   /* width: 100%;
+   margin-left: 45%;
+   margin-right: 80%; */
+
+   width: 300px;
+   margin-left: 15%;
+   border-radius: 7px;
+   box-shadow: 10px, 3px, 5px black;
+   border: 1px solid #4e4b4b;
+   display: block;
+   margin-top: 10px;
+   height: 25px;
+   font-style: normal;  
+ }
+
+ .signup button
+ {
+   background-color: black;
+   font-size: 17px;
+   width: 100px;
+   height: 35px;
+   border-radius: 7px;
+   border: rgb(30, 47, 240);;
+   margin-left: 40%;
+   margin-top: 7%;
+   color: #ffffff;
+   font-weight: bold;
+   cursor:pointer;
+   margin-bottom: 40px;
+ }
+
+ .signup button:hover{
+  background-color: cornsilk;
+  color: black; 
+}
+
+.signup img 
+{
+  padding-top: 30px;
+  padding-left: 42%;
+}
+
+.signup  a
+{
+  padding-left: 30%;
+  padding-top: 16px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.signup a:hover 
+{
+  color: black;
+}
+
+
+
 
