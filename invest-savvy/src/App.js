@@ -6,23 +6,51 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-   <Router>
-    <div className="App">
-      <Navbar/>
+  //  <Router>
+  //   <div className="App">
+  //     <Navbar/>              
 
-      <div className="content">
+  //     <div className="content">
         
+  //       <Switch>
+
+  //         <Route exact path ="/">
+  //           <ContentHome/>
+  //         </Route>
+
+  //         <Route path = "/login">
+  //           <Login/>
+  //         </Route>
+  //       </Switch>
+  //     </div>
+  //   </div>
+  //   </Router> 
+
+  <Router>
+    <div className="App">
+      
         <Switch>
+          
+            <Route exact path ="/">
+            <div className="homepage">
+               <Navbar/>
+               <ContentHome/>
+               </div>
+            </Route>
+          
+         
+            <Route path = "/login">
+              <div className="loginpage">
+                 <Navbar/>
+              </div>
 
-          <Route exact path ="/">
-            <ContentHome/>
-          </Route>
-
-          <Route path = "/login">
-            <Login/>
-          </Route>
+              <div className="loginpg">
+                 <Login/>
+              </div>
+              
+            </Route>
+          
         </Switch>
-      </div>
     </div>
     </Router> 
   );
