@@ -3,6 +3,8 @@ import Navbar from "./navbar";
 import Signup from "./signup";
 import Login from "./login";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import About from "./aboutus";
+import Contact from "./contactus";
 
 function App() {
   return (
@@ -57,6 +59,28 @@ function App() {
 
               <div className="loginpg">
                  <Login/>
+              </div>
+              
+            </Route>
+
+            <Route path = "/aboutus">
+              <div className="aboutpage">
+                 <Navbar/>
+              </div>
+
+              <div className="aboutpg">
+                 <About/>
+              </div>
+              
+            </Route>
+
+            <Route path = "/contactus">
+              <div className="contactpage">
+                 <Navbar/>
+              </div>
+
+              <div className="contactpg">
+                 <Contact/>
               </div>
               
             </Route>
