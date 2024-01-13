@@ -69,21 +69,31 @@ body
 {
     display: flex;
     /* padding-left: 50px; */
-    padding-top: 30px;
+    /* padding-top: 30px; */
+    padding-top: 1.76%;
     padding-left: 60px;
+    width: 100vw;
+    height: 3rem;
     /* margin-left: 20px; */
+    justify-content: space-around;
 }
 
 .navbar img
 {
-  padding-left: 25px;
+  padding-left: 7%;
+  width: 70px;
+  margin-left: 2%;
 }
 
 .links
-{   margin-top: 7px;
+{   margin-top: 0.8%;
     /* margin-left: auto; */
-    margin-right: 20%;
-    padding-left: 49%;
+    /* margin-right: 35%; */
+    padding-left: 47%;
+    background: none;
+    display: flexbox;
+    padding-right: 10%;
+    width: 40%;
 }
 
 .navbar h1 
@@ -94,12 +104,15 @@ body
 
 .links a 
 {
-    text-decoration: none;
-    margin-left: 35px;
-    padding: 0px;
-    color: #FFFFF0;
-    font-weight: bold;
-    font-size: 19px;
+  text-decoration: none;
+  margin-left: 0.05%;
+  /* padding: 20px; */
+  padding-right: 7%;
+  
+  
+  color: #FFFFF0;
+  font-weight: bold;
+  font-size: 19px;
 }
 
 .links a:hover 
@@ -169,18 +182,14 @@ body
 
 .info button 
 {
-    width: 150px;
-    height: 50px;
-    font-size: 23px;
-    font-weight: bold;
-    background-color: #FFFFF0;
-    border: 5px black;
-    margin-top: 225%;
-    position:relative;
-    justify-content: center;
-    margin-left: -540%;
-    
-    text-decoration: none;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #FFFFF0;
+  border: 5px black;
+  margin-top: 65%;
+  text-decoration: none;
 }
 
 .info button:hover 
