@@ -2,8 +2,8 @@ const mongoose =  require('mongoose')
 const Schema = mongoose.Schema 
  
 const loginschema = new Schema({
-    email: {
-        type: String,
+    username: {
+        type:String,
         required: true,
         unique: true
     },
@@ -14,4 +14,7 @@ const loginschema = new Schema({
     }
 })
 
+
+//static login method
+// userSchema.statics.login
 mongoose.exports = mongoose.model('login', loginschema)
