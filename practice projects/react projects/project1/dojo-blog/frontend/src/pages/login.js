@@ -1,21 +1,26 @@
 // import logo from './logo.png'
 import { useState } from "react";
+import { useLogin } from "../hooks/useLogin";
 
 const Login = () => {
 
     
-    const [password, setPassword] = useState("");
-    const [name, setName]=useState("");
+    const [password, setPassword] = useState('');
+    const [username, setName]=useState('');
 
-    function validateForm() {
+    const{login, error, isLoading} = useLogin()
 
-        return  password.length > 0;   
-      }
+    // function validateForm() {
 
-    function handleSubmit(e) {
+    //     return  password.length > 0;   
+    //   }
+
+    const handleSubmit = async (e) => {
 
         e.preventDefault();   
-      }
+        await login(username, password);
+        console.log(password, username );
+      };
 
     return ( 
         <div className="signup">
@@ -25,7 +30,7 @@ const Login = () => {
             <form onSubmit = {handleSubmit}>
                 <label>Username:</label>
                 <input type="text" required
-                value={name}
+                value={username}
                 onChange={(e) => setName(e.target.value)}
                 />
                 {/* <label>Email: </label>
@@ -41,7 +46,8 @@ const Login = () => {
                     />
                 </pre>
 
-                <button disabled={!validateForm()}>Submit</button>
+                <button disabled={isLoading}>Submit</button>
+                {error && <div className="error">{error}</div>}
                 <pre></pre>
                 <a href = "/signup">Don't have an account?</a>
             </form>

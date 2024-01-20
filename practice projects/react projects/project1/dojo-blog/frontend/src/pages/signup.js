@@ -1,21 +1,26 @@
 // import logo from './logo.png'
-import { useState } from "react";
+import { useState } from "react"
+import { useSignup } from "../hooks/useSignup";
 
 const Signup = () => {
 
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [name, setName]=useState("");
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [username, setName]=useState('');
 
-    function validateForm() {
+    const{signup, error, isLoading} = useSignup()
 
-        return email.length > 0 && password.length > 0;   
-      }
+    // function validateForm() {
 
-    function handleSubmit(e) {
+    //     return email.length > 0 && password.length > 0;   
+    //   }
+
+    const handleSubmit = async (e) => {
 
         e.preventDefault();   
-      }
+        await signup(email, username, password);
+        console.log(password, username ,email );
+      };
 
     return ( 
         <div className="signup">
@@ -25,7 +30,7 @@ const Signup = () => {
             <form onSubmit = {handleSubmit}>
                 <label>Username:</label>
                 <input type="text" required
-                value={name}
+                value={username}
                 onChange={(e) => setName(e.target.value)}
                 />
                 <label>Email: </label>
@@ -41,7 +46,8 @@ const Signup = () => {
                     />
                 </pre>
 
-                <button disabled={!validateForm()}>Submit</button>
+                <button disabled={isLoading}>Submit</button>
+                {error && <div className="error">{error}</div>}
                 <pre></pre>
                 <a href = "/login">Already have an account?</a>
             </form>
