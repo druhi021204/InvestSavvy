@@ -1,58 +1,73 @@
 import Navbar from './pages/navbar';
 import Content from './pages/content';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Create from './pages/create';
 import Details from './pages/Blogdetails';
 import NotFound from './pages/Notfound';
 import Getnews from './pages/getnews';
 import Signup from './pages/signup';
 import Login from './pages/login';
+import { useAuthContext } from './hooks/useAuthContext';
 // import Getnews from './Getnews';
 
 function App() {
   
+      const {user} = useAuthContext();
+
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
           <Navbar/>
           <div className="content1">
               {/* <h1>RESPECT</h1> */}
               
-              <Switch>
-                  <Route exact path="/">
+              <Routes>
+                  {/* <Route exact path="/">
                        <Content/>
-                  </Route>
+                  </Route> */}
 
-                  <Route path="/create">
-                        <Create/>
-                  </Route>
+                  <Route 
+                         exact path="/"
+                        element={<Content/>}
+                  />
 
-                  <Route path="/blogs/:id">
-                        <Details/>
-                  </Route>
+                  <Route 
+                        path="/create"
+                        element={<Create/>}
+                  />
 
-                  <Route path="/getnews">
-                        <Getnews/>
-                  </Route>
+                  <Route 
+                        path="/blogs/:id"
+                        element={<Details/>}
+                  />
 
-                  <Route path="/signup">
-                        <Signup/>
-                  </Route>
+                  <Route 
+                        path="/getnews"
+                        element={<Getnews/>}
+                  />
 
-                  <Route path="/login">
-                        <Login/>
-                  </Route>
+                  <Route 
+                        path="/signup"
+                        element={!user ? <Signup/> : <Navigate to="/" />}
+                  />
 
-                  <Route path='*'>
-                        <NotFound/>                        
-                  </Route>
+                  <Route 
+                        path="/login"
+                        element={!user ? <Login/> : <Navigate to="/" />}
+                  />
 
-              </Switch>
+                  <Route 
+                        path='*'
+                        element={<NotFound/>}                        
+                  />
+
+              </Routes>
     
            </div>
     
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 

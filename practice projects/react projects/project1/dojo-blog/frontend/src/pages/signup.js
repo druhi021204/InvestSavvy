@@ -1,4 +1,5 @@
 // import logo from './logo.png'
+// import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { useState } from "react"
 import { useSignup } from "../hooks/useSignup";
 
@@ -46,6 +47,7 @@ const Signup = () => {
                     />
                 </pre>
 
+                {/* <Link to = "/" ><button disabled={isLoading}>Submit</button></Link> */}
                 <button disabled={isLoading}>Submit</button>
                 {error && <div className="error">{error}</div>}
                 <pre></pre>
