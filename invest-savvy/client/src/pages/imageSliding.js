@@ -69,6 +69,8 @@
 
 
 // ImageSliding.js
+
+
 import React from 'react';
 import img1 from '../pictures/img1.png';
 import img2 from '../pictures/img2.jpg';
@@ -77,6 +79,7 @@ import img4 from '../pictures/img4.jpg';
 import img5 from '../pictures/img5.jpg';
 import img6 from '../pictures/img6.jpg';
 import img7 from '../pictures/img7.jpg';
+import { Link } from 'react-router-dom';
 
 const ImageSliding = () => {
   return (
@@ -97,7 +100,9 @@ const ImageSliding = () => {
         ))}
       </div>
     </div>
+    <Link to = "/mainform">
     <button>Let's Begin</button>
+    </Link>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 //login user 
-const forLogin = require('../models/loginmodel')
 const User = require('../models/userModel');
 const jwt = require('jsonwebtoken');
 
@@ -9,7 +8,7 @@ const createToken = (_id) => {
 }
 
 const loginUser = async(req, res) => {
-    const{username,email, password} = req.body
+    const{username, password} = req.body
 
     try {
         const user = await User.login(username, password)

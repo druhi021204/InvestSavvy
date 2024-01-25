@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../logo.png'
+import logo from '../pictures/logo.png'
 //to identufy that the user is logged in
 import { useLogout } from '../hooks/useLogout';
 import { useAuthContext } from '../hooks/useAuthContext';

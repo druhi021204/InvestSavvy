@@ -10,6 +10,8 @@ import { useAuthContext } from "./hooks/useAuthContext";
 import Profile from "./pages/profile";
 import News from "./pages/news";
 import ImageSliding from "./pages/imageSliding";
+import MainForm from "./pages/mainform";
+import DataDetails from "./pages/DataDetails";
 
 // function App() {
 //   return (
@@ -103,13 +105,15 @@ function App() {
    return (
      <BrowserRouter>
        <Routes>
-         <Route path="/" element={<HomePage />} />
+         <Route path="/" element={!user ?<HomePage /> : <Navigate to ="/home"/>} />
          <Route path="/home" element={<HomeAfterPage />} />
          <Route path = "/signup"element={!user ? <Signuppage /> : <Navigate to="/home" />}/>
          <Route path="/login" element={!user ?<LoginPage /> : <Navigate to="/home" /> } />
          <Route path="/aboutus" element={<AboutUsPage />} />
          <Route path="/profile" element={<ProfilePage />} />
          <Route path="/contactus" element={<ContactUsPage />} />
+         <Route path="/mainform" element={<Mainform/>}/>
+         <Route path="/results" element={<DataDetail/>}/>
        </Routes>
      </BrowserRouter>
    );
@@ -209,6 +213,35 @@ function ProfilePage() {
                </div>
       </div>
    );
+}
+
+function Mainform() {
+  return (
+     <div>
+        <div className="mainformpage">
+               <Navbar/>
+        </div>
+
+              <div className="mainformpg">
+                 <MainForm/>
+              </div>
+     </div>
+  );
+}
+
+function DataDetail() {
+   return (
+      <div>
+         <div className="datadetailpage">
+                <Navbar/>
+         </div>
+ 
+               <div className="datadetailpg">
+                  <DataDetails/>
+               </div>
+      </div>
+   );
  }
+
 
 export default App;

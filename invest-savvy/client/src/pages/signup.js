@@ -1,4 +1,4 @@
-import logo from '../logo.png'
+import logo from '../pictures/logo.png'
 import { useState } from "react";
 import { useSignup } from "../hooks/useSignup";
 
