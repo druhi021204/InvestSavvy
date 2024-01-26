@@ -31,13 +31,19 @@ const MainForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        if (!user) {
+            setError('You must be logged in')
+            return
+          }
+
         const data = {risk, timeperiod}
 
-        const response = await fetch ('/api/data', {
+        const response = await fetch ('/api/data/add', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
                 'Content-Type': 'application/json',
+                'Authorization': `Bearer ${user.token}`
             }
         })
 
@@ -54,6 +60,7 @@ const MainForm = () => {
             setTimePeriod('')
             setError(null)
             setEmptyFields([])
+            localStorage.setItem('data', JSON.stringify(json))
             dispatch({type: 'CREATE_DATA', payload: json})
         }
     }
@@ -79,7 +86,9 @@ const MainForm = () => {
                     />
                 </pre>
 
+                
                 <button>Submit</button>
+              
                 {/* <button disabled={isLoading}>Submit</button>
                 {error && <div className="error">{error}</div>} */}
                 {error && <div className="error">{error}</div>}

@@ -3,11 +3,12 @@ import logo from '../pictures/logo.png'
 //to identufy that the user is logged in
 import { useLogout } from '../hooks/useLogout';
 import { useAuthContext } from '../hooks/useAuthContext';
-
+// import { useDataContext } from '../hooks/useDataContext';
 
 const Navbar = () => {
     const {user} = useAuthContext();
     const {logout} = useLogout();
+    // const {data} = useDataContext();
 
     const handleClick = () => {
         logout();
@@ -19,6 +20,8 @@ const Navbar = () => {
            <img src={logo} width={70} height={50}/>
             {/* <h1>InvestSavvy</h1> */}
            {/* </div> */}
+        
+          
         {user && (
         <div className="links">  
             {/* <Link to="/profile"> */}
@@ -31,6 +34,9 @@ const Navbar = () => {
             <Link to = "/">
             <button onClick={handleClick}>Logout</button>
             </Link>
+            {/* <Link to = "/mainform">
+            <button onClick={handleClick}>F</button>
+            </Link> */}
         </div>
         )}
         {!user && (

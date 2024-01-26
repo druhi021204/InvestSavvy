@@ -12,6 +12,8 @@ import News from "./pages/news";
 import ImageSliding from "./pages/imageSliding";
 import MainForm from "./pages/mainform";
 import DataDetails from "./pages/DataDetails";
+import { useDataContext } from "./hooks/useDataContext";
+
 
 // function App() {
 //   return (
@@ -101,6 +103,7 @@ import DataDetails from "./pages/DataDetails";
 
 function App() {
   const {user} = useAuthContext();
+  const {data} = useDataContext();
 
    return (
      <BrowserRouter>
@@ -112,7 +115,7 @@ function App() {
          <Route path="/aboutus" element={<AboutUsPage />} />
          <Route path="/profile" element={<ProfilePage />} />
          <Route path="/contactus" element={<ContactUsPage />} />
-         <Route path="/mainform" element={<Mainform/>}/>
+         <Route path="/mainform" element={!data ?<Mainform/> : <Navigate to ="/results"/>}/>
          <Route path="/results" element={<DataDetail/>}/>
        </Routes>
      </BrowserRouter>

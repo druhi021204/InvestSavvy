@@ -1,12 +1,14 @@
 const express = require('express')
-const {createdata} = require('../controllers/dataController')
+const {getData,createdata} = require('../controllers/dataController')
 // const requireAuth = require('../middleware/requireAuth')
 const router = express.Router()
+// router.use(requireAuth)
 
 // require auth for all data routes
 // router.use(requireAuth)
 
 // POST a new data
-router.post('/', createdata)
+router.post('/add', createdata)
+router.get('/:id', getData)
 
 module.exports = router

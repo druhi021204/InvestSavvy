@@ -32,7 +32,7 @@ const News = () => {
                 <p className="card-text">
                  {ele.title}
                 </p>
-                <a href={ele.url} target="_blank" class="btn btn-primary">
+                <a href={ele.url} target="_blank" className="btn btn-primary">
                   Read More
                 </a>
               </div>

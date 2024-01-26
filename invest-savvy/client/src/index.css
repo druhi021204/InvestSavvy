@@ -80,6 +80,15 @@ body
  
 }
 
+.datadetailpage
+{
+  /* background-image: url("bckg.png") ; */
+ /* background-color:rgb(30, 47, 240); */
+ background-color:black;
+ height: 100px;
+ 
+}
+
 /* .signupg
 {
   background-image: url("bckg.png") ; 
@@ -117,7 +126,7 @@ body
      /* margin-top: 0.8%; */
     /* margin-left: auto; */
     /* margin-right: 35%; */
-    padding-left: 47%;
+    padding-left: 35%;
     background: none;
     /* display: flexbox; */
     padding-right: 10%;
@@ -787,6 +796,7 @@ div.error {
   font-size: 100px;
   padding-bottom: 1%;
   padding-top: 5.5%;
+  text-transform:uppercase;
 }
 
 .homeafter h5 
