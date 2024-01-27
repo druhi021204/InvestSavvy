@@ -13,6 +13,7 @@ import ImageSliding from "./pages/imageSliding";
 import MainForm from "./pages/mainform";
 import DataDetails from "./pages/DataDetails";
 import { useDataContext } from "./hooks/useDataContext";
+import CompanyDetails from "./pages/getstock";
 
 
 // function App() {
@@ -155,6 +156,7 @@ function App() {
      <div className="homeafterpg">
            <HomeAfter/>
            <ImageSliding/>
+           <CompanyDetails/>
            <News/>
      </div>
      </div>

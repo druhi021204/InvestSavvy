@@ -78,7 +78,7 @@ const MainForm = () => {
                 className={emptyFields.includes('risk') ? 'error' : ''}
                 />
                 <pre>
-                    <label>Time for Investing</label>
+                    <label>Time for Investing:</label>
                     <input type="number" required placeholder="Enter the no. of years"
                     value={timeperiod}
                     onChange={(e) => setTimePeriod(e.target.value)}
