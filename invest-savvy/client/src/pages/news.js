@@ -19,7 +19,7 @@ const News = () => {
 
   return (
     <>
-    <h2 className="firstdiv">Get the latest Business News</h2>
+    <h2 className="firstdiv">Dive into the Pulse of the Corporate World</h2>
           <div className="mainDiv">
       {mynews.map((ele) => {
         console.log(ele)
