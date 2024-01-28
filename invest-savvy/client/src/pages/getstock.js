@@ -448,6 +448,18 @@ const CompanyDetails = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+//   const finnhub = require('finnhub');
+
+//   const api_key = finnhub.ApiClient.instance.authentications['api_key'];
+//   api_key.apiKey = "cmqvv7hr01ql2lmt95u0cmqvv7hr01ql2lmt95ug"
+//   const finnhubClient = new finnhub.DefaultApi()
+
+// finnhubClient.quote("AAPL", (error, data, response) => {
+//   console.log(data)
+// });
+
+
+
   const fetchCompanyDetails = async () => {
     try {
       setLoading(true);
