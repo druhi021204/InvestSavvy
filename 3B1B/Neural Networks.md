@@ -24,12 +24,12 @@
 - A particular number can b broken down into recurring patterns
 - This shall be done in one layer
 
-![Untitled](Neural%20Networks%2008e5904142ce46419d0600c6302e72d7/Untitled.png)
+![Unavailable](/InvestSavvy/3B1B/Neural%20Networks/Untitled.png)
 
 - These patterns can further be broken down into edges
 - This shall b done in some layer other than the above mentioned layer
 
-![Untitled](Neural%20Networks%2008e5904142ce46419d0600c6302e72d7/Untitled%201.png)
+![Unavailable](/InvestSavvy/3B1B/Neural%20Networks/Untitled1.png)
 
 - Basically :
     
@@ -72,7 +72,7 @@ previous layer
 
 weighted sum before passing it through the sigmoid(ReLu) function
 
-![Untitled](Neural%20Networks%2008e5904142ce46419d0600c6302e72d7/Untitled%202.png)
+![Unavailable](/InvestSavvy/3B1B/Neural%20Networks/Untitled2.png)
 
 ## Cost function
 
@@ -92,7 +92,7 @@ weighted sum before passing it through the sigmoid(ReLu) function
 
 - We try to minimize the cost function to get the best possible values for the weights and biases
 
-![Untitled](Neural%20Networks%2008e5904142ce46419d0600c6302e72d7/Untitled%203.png)
+![Unavailable](/InvestSavvy/3B1B/Neural%20Networks/Untitled3.png)
 
 - This is done by taking the ‘GRADIENT’ of the function (Gradient gives steepest ascent)
 - Negative of Gradient tells us the steepest possible way to decrease the function
