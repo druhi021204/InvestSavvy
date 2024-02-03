@@ -41,7 +41,7 @@ signupSchema.statics.signup = async function(email, username, password)  {
 
     if(!validator. isStrongPassword(password))
     {
-        throw Error("Make a strong password")
+        throw Error("Password must have atleast 1 Capital, 1 small and 1 unique character")
     }
     
     if(exists){
