@@ -3,14 +3,27 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const dataSchema = new Schema ({
-    risk: {
-        type: Number,
+    
+    startDate : {
+        type: Date,
         required:true
     },
 
-    timeperiod: {
-        type:Number,
-        required:true
+    endDate : {
+        type: Date,
+        required: true
+    },
+
+    strings: {
+        type: String,
+        validate: {
+            validator: function (value) {
+                // Validate that the input is a comma-separated list of uppercase strings
+                const regex = /^[A-Z\s]+(,[A-Z\s]+)*$/;
+                return regex.test(value);
+            },
+            message: props => `${props.value} is not a valid comma-separated list of uppercase strings.`
+        }
     }
 })
 

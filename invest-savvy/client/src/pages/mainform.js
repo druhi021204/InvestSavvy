@@ -8,8 +8,9 @@ const MainForm = () => {
     const { dispatch } = useDataContext()
     const { user } = useAuthContext()
 
-    const [risk, setRisk] = useState('');
-    const [timeperiod, setTimePeriod]=useState('');
+    const [startDate, setStartDate] = useState('');
+    const [endDate, setEndDate] = useState('');
+    const [strings, setStrings]=useState('');
     const [error, setError] = useState(null)
     const [emptyFields, setEmptyFields] = useState([])
 
@@ -36,7 +37,7 @@ const MainForm = () => {
             return
           }
 
-        const data = {risk, timeperiod}
+        const data = {startDate, endDate, strings}
 
         const response = await fetch ('/api/data/add', {
             method: 'POST',
@@ -56,8 +57,9 @@ const MainForm = () => {
 
         if(response.ok)
         {
-            setRisk('')
-            setTimePeriod('')
+            setStartDate('')
+            setEndDate('')
+            setStrings('')
             setError(null)
             setEmptyFields([])
             localStorage.setItem('data', JSON.stringify(json))
@@ -71,18 +73,26 @@ const MainForm = () => {
             <h2>InvestSavvy</h2>
             {/* <span role="img" aria-label="rocket">🚀</span> */}
             <form onSubmit = {handleSubmit}>
-                <label>Risk Factor: </label>
-                <input type="number" required placeholder="Enter the value"
-                value={risk}
-                onChange={(e) => setRisk(e.target.value)}
-                className={emptyFields.includes('risk') ? 'error' : ''}
+                <label>Start-Date: </label>
+                <input type="date" required placeholder="dd/mm/yyyy"
+                value={startDate}
+                onChange={(e) => setStartDate(e.target.value)}
+                className={emptyFields.includes('startDate') ? 'error' : ''}
                 />
+
+                <label>End-Date: </label>
+                <input type="date" required placeholder="dd/mm/yyyy"
+                value={endDate}
+                onChange={(e) => setEndDate(e.target.value)}
+                className={emptyFields.includes('endDate') ? 'error' : ''}
+                />
+
                 <pre>
-                    <label>Time for Investing:</label>
-                    <input type="number" required placeholder="Enter the no. of years"
-                    value={timeperiod}
-                    onChange={(e) => setTimePeriod(e.target.value)}
-                    className={emptyFields.includes('timeperiod') ? 'error' : ''}
+                    <label>Stock Market Tickers:</label>
+                    <input type="text" required placeholder="Enter comma separated tickers"
+                    value={strings}
+                    onChange={(e) => setStrings(e.target.value)}
+                    className={emptyFields.includes('strings') ? 'error' : ''}
                     />
                 </pre>
 

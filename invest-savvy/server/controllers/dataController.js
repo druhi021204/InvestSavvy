@@ -34,18 +34,23 @@ const getData = async (req, res) => {
 
 
 const createdata = async (req, res) => {
-    const {risk, timeperiod} = req.body 
+    const { startDate, endDate, strings} = req.body 
 
     let emptyFields = [] 
 
-    if(!risk)
+    if(!startDate)
     {
-        emptyFields.push('risk')
+        emptyFields.push('startDate')
     }
 
-    if(!timeperiod)
+    if(!endDate)
     {
-        emptyFields.push('timeperiod')
+        emptyFields.push('endDate')
+    }
+
+    if(!strings)
+    {
+        emptyFields.push('strings')
     }
 
     if(emptyFields.length > 0) 
@@ -55,7 +60,7 @@ const createdata = async (req, res) => {
 
     try {
         // const user_id = req.user._id 
-        const data = await Data.create({risk, timeperiod})
+        const data = await Data.create({startDate, endDate, strings})
         // const token = createToken(data._id)
         res.status(200).json(data)
     }
