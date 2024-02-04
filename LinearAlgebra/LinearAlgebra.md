@@ -6,7 +6,7 @@
 
 ## Vectors : What are they ?
 
-- An arrow pointing somewhere in space
+- An arrow pointing somewhere in space 
 - List of numbers
 - Each vector represents a certain movement with a certain distance and direction in the space
 - Numbers “Scale” a vector i.e. stretch or squish it i.e. Scale them up or scale them down
