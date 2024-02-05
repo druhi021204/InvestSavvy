@@ -1,4 +1,5 @@
 import logo from '../pictures/logo.png'
+import img4 from '../pictures/img8.png'
 import { useState } from "react";
 import { useLogin } from "../hooks/useLogin";
 
@@ -23,6 +24,11 @@ const Login = () => {
       };
 
     return ( 
+       
+        <div className="logindiv">
+            <div className="img4">
+                <img src={img4} width={500} height={800}/>
+            </div>
         <div className="login">
             <img src={logo} width={70} height={50}/>
             <h2>InvestSavvy</h2>
@@ -47,6 +53,7 @@ const Login = () => {
                 <pre></pre>
                 <a href = "/signup">Don't have an account?</a>
             </form>
+        </div>
         </div>
      );
 }

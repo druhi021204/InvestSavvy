@@ -61,7 +61,7 @@ signupSchema.statics.signup = async function(email, username, password)  {
     return user
 }
 
-signupSchema.statics.login = async function( username, password)  {
+signupSchema.statics.login = async function(  username, password)  {
     const exists = await this.findOne({username})
     
     if(!password || !username)

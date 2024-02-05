@@ -36,7 +36,7 @@ const News = () => {
                   Read More
                 </a>
               </div>
-            </div>
+        </div>
           </>
         );
     })}

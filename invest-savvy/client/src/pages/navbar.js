@@ -6,7 +6,7 @@ import { useAuthContext } from '../hooks/useAuthContext';
 // import { useDataContext } from '../hooks/useDataContext';
 
 const Navbar = () => {
-    const {user} = useAuthContext();
+    const {user:user} = useAuthContext();
     const {logout} = useLogout();
     // const {data} = useDataContext();
 
@@ -23,10 +23,11 @@ const Navbar = () => {
         
           
         {user && (
+         
         <div className="links">  
-            {/* <Link to="/profile"> */}
+            <Link to="/profile">
             <span>{user.username}</span> 
-            {/* </Link>        */}
+            </Link>       
             <Link to = "/home">Home</Link>
             {/* <a href = "/signup">Sign Up</a> */}
             <a href = "/aboutus">About Us</a>
@@ -38,7 +39,10 @@ const Navbar = () => {
             <button onClick={handleClick}>F</button>
             </Link> */}
         </div>
+        
         )}
+   
+     
         {!user && (
         <div className="links">            
             <a href = "/">Home</a>

@@ -279,6 +279,16 @@ body
     text-decoration: none;
 }
 
+.logindiv {
+  display: flex;
+}
+
+.logindiv .img4 {
+  margin-left: 10%;
+  /* padding-top: 10%; */
+  border-bottom: aqua;
+}
+
 .login 
 {
   /* margin-left: 650px;  */
@@ -381,6 +391,15 @@ body
   color: black;
 }
 
+.signupdiv {
+  display: flex;
+}
+
+.signupdiv .img4 {
+  margin-left: 10%;
+  /* padding-top: 10%; */
+  border-bottom: aqua;
+}
 
 
 .signup 

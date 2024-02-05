@@ -114,7 +114,7 @@ function App() {
          <Route path = "/signup"element={!user ? <Signuppage /> : <Navigate to="/home" />}/>
          <Route path="/login" element={!user ?<LoginPage /> : <Navigate to="/home" /> } />
          <Route path="/aboutus" element={<AboutUsPage />} />
-         <Route path="/profile" element={<ProfilePage />} />
+         <Route path="/profile" element={user ? <ProfilePage /> : <Navigate to="/signup"/>} />
          <Route path="/contactus" element={<ContactUsPage />} />
          <Route path="/mainform" element={!data ?<Mainform/> : <Navigate to ="/results"/>}/>
          <Route path="/results" element={<DataDetail/>}/>
