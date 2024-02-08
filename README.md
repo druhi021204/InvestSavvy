@@ -105,9 +105,7 @@ All the partially implemented features:
 >For Web-App
  1. Clone the GitHub repo:
  In the home directory, run the following command:
- ```
- 
- ```
+
  ```bash
  git clone git@github.com:druhi021204/InvestSavvy.git
  ```
@@ -133,24 +131,22 @@ All the partially implemented features:
 
 ## 👨‍💻Team Members
 
-Add names of your team members with their emails and links to their GitHub accounts
+- Our team and their contact information
 
-- [Team Member 1 Name](https://github.com/): Email 
-- [Team Member 2 Name](https://github.com/): Email 
+- [Druhi Phutane](https://github.com/druhi021204): druhiphutane@gmail.com 
+- [Siddhi Parekh](https://github.com/siddhip2004): 
+- [Purab Tamboli](https://github.com/thisisPurab): purabrtamboli97@gmail.com
+- [Nishat ](https://github.com/nishatp9): Email 
 
 ## 👨‍🏫Mentors
 
-Add names of your mentors with their emails and links to their GitHub accounts
+- Our Mentors and Their contact information
 
-- [Mentor 1 Name](https://github.com/): Email 
-- [Mentor 2 Name](https://github.com/): Email 
+- [Rohan Fatehchandka](https://github.com/rohanfatehchandka): rohanfatehchandka@gmail.com
+- [Arnav Zutshi](https://github.com/AsRaNi1): arnzut1324@gmail.com 
 
 ## 📱Screenshots
-Add a few screenshots for parts of the project completed till now to give the viewer a quick idea of what your project looks like. After all, a picture speaks a thousand words.
+- A glimpse of our project 
 
-You'll have to link the screenshots from your drive folder here.
-
-![Screenshot alt text](https://i.redd.it/qp8ocyzvyj8a1.jpg "Here is a screenshot")
-
-Use this template as a guide for writing your documentation. Feel free to customize and adapt it for you project.  
-For more Markdown syntax help, visit [here](https://www.markdownguide.org/basic-syntax/)
+![Home Page](https://drive.google.com/file/d/1dD_0P-yMc71j0Jktw0rgLJsnjhDDH2rc/view?usp=sharing "Home Page")
+![Main Page](https://drive.google.com/file/d/10BVCxuN_q1JRY3huQNcYjoc67nfyuY0u/view?usp=sharing "Main Page")
