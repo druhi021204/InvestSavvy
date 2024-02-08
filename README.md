@@ -148,5 +148,5 @@ All the partially implemented features:
 ## 📱Screenshots
 - A glimpse of our project 
 
-![Home Page](https://drive.google.com/file/d/1dD_0P-yMc71j0Jktw0rgLJsnjhDDH2rc/view?usp=sharing "Home Page")
-![Main Page](https://drive.google.com/file/d/10BVCxuN_q1JRY3huQNcYjoc67nfyuY0u/view?usp=sharing "Main Page")
+![Home Page](https://drive.google.com/file/d/1dD_0P-yMc71j0Jktw0rgLJsnjhDDH2rc/preview)
+![Main Page](https://drive.google.com/file/d/10BVCxuN_q1JRY3huQNcYjoc67nfyuY0u/preview)
