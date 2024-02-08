@@ -134,9 +134,9 @@ All the partially implemented features:
 - Our team and their contact information
 
 - [Druhi Phutane](https://github.com/druhi021204): druhiphutane@gmail.com 
-- [Siddhi Parekh](https://github.com/siddhip2004): 
+- [Siddhi Parekh](https://github.com/siddhip2004): shparekh25@gmail.com
 - [Purab Tamboli](https://github.com/thisisPurab): purabrtamboli97@gmail.com
-- [Nishat ](https://github.com/nishatp9): Email 
+- [Nishat Patil](https://github.com/nishatp9): nishatpatil902@gmail.com 
 
 ## 👨‍🏫Mentors
 
@@ -149,4 +149,5 @@ All the partially implemented features:
 - A glimpse of our project 
 
 ![Home Page](https://drive.google.com/uc?id=1dD_0P-yMc71j0Jktw0rgLJsnjhDDH2rc)
+![Sign Up](https://drive.google.com/uc?id=1BdRuAx8ESTcx_PjWocw504p606ntSJHC)
 ![Main Page](https://drive.google.com/uc?id=10BVCxuN_q1JRY3huQNcYjoc67nfyuY0u)
