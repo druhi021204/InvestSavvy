@@ -154,37 +154,55 @@ const DataDetails = () => {
     cleanData();
   };
   
+  // useEffect(() => {
+  //   const fetchDataFromFlask = async () => {
+  //     // try {
+  //       const response = await fetch("http://localhost:5000/optimize_portfolio", 
+  //         // method: "POST",
+  //         // headers: {
+  //         //   "Content-Type": "application/json",
+  //         //   Authorization: `Bearer ${user.token}`,
+  //         // },
+  //         // body: JSON.stringify({
+  //         //   tickers: data.strings.split(","),
+  //         //   start_date: data.startDate,
+  //         //   end_date: data.endDate,
+  //         // }),
+
+          
+  //       );
+
+  //       // let data = await resonse.json();
+  //       //   setFlaskData(data.articles);
+
+  //       if (!response.ok) {
+  //         throw new Error(`HTTP error! Status: ${response.status}`);
+  //       }
+
+  //       const json = await response.json();
+  //       setFlaskData(json);
+  //     }
+  //     // } catch (error) {
+  //     //   console.error("Error fetching data from Flask API:", error);
+  //     // }
+  //   };
+
+  //   // if (user && data) {
+  //   //   fetchDataFromFlask();
+  //   // }
+  // }, [user, data]);
+
+  const fetchDatafromFlask = async () => {
+    let resonse = await fetch(
+      "http://localhost:5000/tickers"
+    );
+    let json = await resonse.json();
+    setFlaskData(json);
+  };
+
   useEffect(() => {
-    const fetchDataFromFlask = async () => {
-      try {
-        const response = await fetch("http://localhost:5000/optimize_portfolio", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${user.token}`,
-          },
-          body: JSON.stringify({
-            tickers: data.strings.split(","),
-            start_date: data.startDate,
-            end_date: data.endDate,
-          }),
-        });
-
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        const json = await response.json();
-        setFlaskData(json);
-      } catch (error) {
-        console.error("Error fetching data from Flask API:", error);
-      }
-    };
-
-    if (user && data) {
-      fetchDataFromFlask();
-    }
-  }, [user, data]);
+    fetchDatafromFlask();
+  }, []);
 
   const DisplayStartDate = ({ startDate }) => {
     const startDateFormatted = new Date(startDate).toLocaleDateString();

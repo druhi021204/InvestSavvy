@@ -26,16 +26,20 @@ const News = () => {
         return (
           <>
         <div className="card" >
+          
               <img src={ele.urlToImage === null ? invest : ele.urlToImage} class="card-img-top" alt="..." />
               <div className="card-body">
                 {/* <h5 className="card-title">{ele.author === "" ? "Janelle Ash" : ele.author}</h5> */}
                 <p className="card-text">
                  {ele.title}
                 </p>
+              </div>
+                <div className="read">
                 <a href={ele.url} target="_blank" className="btn btn-primary">
                   Read More
                 </a>
-              </div>
+                </div>
+              
         </div>
           </>
         );

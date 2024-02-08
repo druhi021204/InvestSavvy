@@ -16,10 +16,10 @@ const Navbar = () => {
 
     return ( 
         <nav className="navbar">
-           {/* <div className="logo"> */}
-           <img src={logo} width={70} height={50}/>
+           <div className="logo">
+           <img src={logo} width={1000} height={80}/>
             {/* <h1>InvestSavvy</h1> */}
-           {/* </div> */}
+           </div>
         
           
         {user && (
