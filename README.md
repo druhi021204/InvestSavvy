@@ -151,3 +151,5 @@ All the partially implemented features:
 ![Home Page](https://drive.google.com/uc?id=1dD_0P-yMc71j0Jktw0rgLJsnjhDDH2rc)
 ![Sign Up](https://drive.google.com/uc?id=1BdRuAx8ESTcx_PjWocw504p606ntSJHC)
 ![Main Page](https://drive.google.com/uc?id=10BVCxuN_q1JRY3huQNcYjoc67nfyuY0u)
+![Company Details](https://drive.google.com/uc?id=1rN4Hwso2bETSPOPZ2YDnObHDC2DWrpOT)
+![News](https://drive.google.com/uc?id=18_89jzJTI19aKFJxV2pSakl6uikh1nBB)
