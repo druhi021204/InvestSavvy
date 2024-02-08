@@ -104,7 +104,7 @@ All the partially implemented features:
 
 >For Web-App
  1. Clone the GitHub repo:
- In the home directory, run the following command:
+ <br>
 
  ```bash
  git clone git@github.com:druhi021204/InvestSavvy.git
@@ -114,21 +114,28 @@ All the partially implemented features:
 
  ```bash
  cd client
- npm init -y
- npm run start
+ npm install
+ npm start
 ```
  3. To start the backend server:
   ```bash
     
     cd server
-    npm init -y 
-    
+    npm install
+    nodemon server.js   
   ```
 
  ## 💻Usage
 
->Steps to run your project once its setup. If you have an app or website, list how the user can go about using it.
+> User needs to signup/login (if not a previous user) by providing their credentials, and setup a secure password.With this one can access all features on home page.
 
+* **Financial terms**: As soon as the page opens after login/signup, one can view the slideshow to enhance knowledge.
+
+* **Portfolio-Optimization**: With the button right below slideshow, 'LET'S BEGIN', one can get potential return on interested stocs.
+
+* **Comapny's Stock Price**: Moving further, one can enter the symbol of share holding company and get record for past 5 years.
+
+* **Latest Financial News**: Last but not least, towards the end, latest financial and business news wil made be seen.
 ## 👨‍💻Team Members
 
 - Our team and their contact information
