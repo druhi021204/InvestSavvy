@@ -34,13 +34,13 @@ const MainForm = () => {
         let Startdate=0;
         if (year && month && day) {
             Startdate= `${year}/${month.padStart(2, '0')}/${day.padStart(2, '0')}`;
-            // return Startdate;
+            return Startdate;
         }
-        if(Startdate!=0){
+        // if(Startdate!==0){
 
-        const startDateFormatted = new Date(Startdate).toLocaleDateString();
-        return <span>{startDateFormatted}</span>;
-        }
+        // const startDateFormatted = new Date(Startdate).toLocaleDateString();
+        // return <span>{startDateFormatted}</span>;
+        // }
 
         return date; // Return the original date if the format is invalid
     };
@@ -50,13 +50,13 @@ const MainForm = () => {
         let Enddate;
         if (year && month && day) {
             Enddate= `${year}/${month.padStart(2, '0')}/${day.padStart(2, '0')}`;
-            // return Enddate;
+            return Enddate;
         }
-        if(Enddate){
+        // if(Enddate){
 
-        const endDateFormatted = new Date(Enddate).toLocaleDateString();
-        return <span>{endDateFormatted}</span>;
-        }
+        // const endDateFormatted = new Date(Enddate).toLocaleDateString();
+        // return <span>{endDateFormatted}</span>;
+        // }
 
         return date; // Return the original date if the format is invalid
     };

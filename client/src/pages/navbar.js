@@ -30,8 +30,8 @@ const Navbar = () => {
             </Link>       
             <Link to = "/home">Home</Link>
             {/* <a href = "/signup">Sign Up</a> */}
-            <a href = "/aboutus">About Us</a>
-            <a href = "/contactus">Contact Us</a>
+            <a href = "/explore">Explore</a>
+            {/* <a href = "/contactus">Contact Us</a> */}
             <Link to = "/">
             <button onClick={handleClick}>Logout</button>
             </Link>

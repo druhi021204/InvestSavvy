@@ -118,6 +118,7 @@ function App() {
          <Route path="/contactus" element={<ContactUsPage />} />
          <Route path="/mainform" element={!data ?<Mainform/> : <Navigate to ="/results"/>}/>
          <Route path="/results" element={<DataDetail/>}/>
+         <Route path="/explore" element={<GetStock/>}/>
        </Routes>
      </BrowserRouter>
    );
@@ -156,12 +157,25 @@ function App() {
      <div className="homeafterpg">
            <HomeAfter/>
            <ImageSliding/>
-           <CompanyDetails/>
            <News/>
      </div>
      </div>
   )
 }
+
+function GetStock() {
+   return (
+      <div className="wholepg">
+      <div className="getstockpage">
+            <Navbar/>
+       </div>
+
+      <div className="getstockpg">
+            <CompanyDetails/>
+      </div>
+      </div>
+   )
+ }
 
 function ProfilePage() {
   return (

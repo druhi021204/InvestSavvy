@@ -192,17 +192,17 @@ const DataDetails = () => {
   //   // }
   // }, [user, data]);
 
-  const fetchDatafromFlask = async () => {
-    let resonse = await fetch(
-      "http://localhost:5000/tickers"
-    );
-    let json = await resonse.json();
-    setFlaskData(json);
-  };
+  // const fetchDatafromFlask = async () => {
+  //   let resonse = await fetch(
+  //     "http://localhost:5000/tickers"
+  //   );
+  //   let json = await resonse.json();
+  //   setFlaskData(json);
+  // };
 
-  useEffect(() => {
-    fetchDatafromFlask();
-  }, []);
+  // useEffect(() => {
+  //   fetchDatafromFlask();
+  // }, []);
 
   const DisplayStartDate = ({ startDate }) => {
     const startDateFormatted = new Date(startDate).toLocaleDateString();

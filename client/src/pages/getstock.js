@@ -458,6 +458,7 @@ const CompanyDetails = () => {
 //   console.log(data)
 // });
 
+document.body.style = 'background: cornsilk;';
 
 
   const fetchCompanyDetails = async () => {
